@@ -81,7 +81,7 @@ header .boton button:hover{
 .slider{
     width: 100%;
     height: auto;
-    margin: 0px auto 0;
+    margin: 5px auto 0;
     overflow: hidden;
     background: rgb(2, 1, 1,70%);
 }
@@ -127,7 +127,6 @@ header .boton button:hover{
 
 }
 
-
 .presentacion{
     width: 100%;
     color: white;
@@ -141,8 +140,29 @@ header .boton button:hover{
     background-size: cover;
 }
 
+.presentacion .boton-presentacion{
+    display: block;
+    margin: 90px auto;
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(244, 244, 244);
+    padding: 9px 25px;
+    background-color: rgb(236, 103, 225);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.presentacion .boton-presentacion:hover{
+    background-color: rgb(253, 243, 254);
+    color: rgb(2, 1, 1);
+    transform: scale(1.2);
+}
+
 footer{
-    margin-top: 100px;
     width: 100%;
     background-color: #191819;
 }
@@ -204,6 +224,7 @@ footer{
 
 .columna3{
     max-width: 400px;
+    margin-right: 100px;
 }
 
 .columna3 h1{
@@ -240,6 +261,11 @@ footer{
     color: white;
     background-color: #2B282C;
     padding: 5px;
+}
+
+.autor a{
+    text-decoration: none;
+    color: white;
 }
 
 .informacion,.autor{
