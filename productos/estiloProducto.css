@@ -1,66 +1,122 @@
 .presentacionJuego{
-    outline: 1px solid blue;
-}
-
-.cajaSliderPresentacion{
-    margin: 100px;
-    outline: 3px solid red;
-    width: 50%;
     display: flex;
+    overflow: hidden;
+    background-color: rgb(25, 24, 25, 85%);
+    border-bottom: 7px solid rgb(25, 24, 25);
+    padding: 0;
+    color: aliceblue;
 }
 
-.sliderJuego{
-    width: 600px;
-    height: 335px;
-    outline: 2px solid green;
-    margin-left: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    list-style: none;
+.infoJuego{
+    background-color: rgba(9, 9, 9, 10%);
+    padding: 30px;
+}
+.infoJuego h1{
+    font-size: 65px;
+    padding: 30px;
 }
 
-.sliderJuego img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: 0.7s;
+.portada img{
+    margin: 50px 50px;
+    width: 450px;
 }
 
-.sliderJuego input[type="radio"]{
-   display: none;
-}
-
-.sliderJuego input[type="radio"]:checked ~ img{
-    opacity: 1;
-}
-
-.sliderJuego input[type="radio"] + label{
-    position: relative;
-    margin: 10px;
-
-    z-index: 100;
+.caja-comprar{
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(244, 244, 244);
-    border-radius: 50%;
+}
+
+.caja-precio{
+    margin: 30px auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(9, 9, 9, 15%);
+    border-radius: 30px;
+}
+
+.boton-comprar button{
+    margin: 10px auto;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(244, 244, 244);
+    padding: 10px 25px;
+    background-color: rgb(236, 103, 225);
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-    border: 2px solid black;
     transition: 0.3s;
 }
 
-.sliderJuego input[type="radio"] + label:hover{
-    transform: scale(1.7);
-    background-color: white;
-    border: 2px solid black;
-
+.boton-comprar button:hover{
+    background-color: rgb(253, 243, 254);
+    color: rgb(86, 184, 108);
+    transform: scale(1.031);
 }
 
-.sliderJuego input[type="radio"]:checked + label{
-   background: rgb(236, 103, 225);
-   outline: 1px solid black;
+.caja-visuales{
+    color: aliceblue;
+    background-color: rgb(25,24,25,90%);
+    display: inline-block;
+    justify-content: center;
+}
+
+.caja-visuales h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.video{
+    width: 80%;
+    height: 500px;
+    margin: 30px auto;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.caja-imagenesJuego{
+    display: flex;
+}
+
+.imagenGrande img{
+    width: 600px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.imagenGrande img:hover{
+    transform: scale(1.05);
+}
+
+.caja-imagenesJuego{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagenesChicas ul{
+    list-style: none;
+}
+
+.imagenesChicas li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagenesChicas li img{
+    width: 270px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.imagenesChicas li img:hover{
+    transform: scale(1.1);
 }
