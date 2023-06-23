@@ -90,7 +90,7 @@ header .boton button:hover{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 60s infinite alternate ease-in-out;
+    animation: slide 50s infinite alternate ease-in-out;
 }
 
 .slider li{
