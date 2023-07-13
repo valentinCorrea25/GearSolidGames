@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+   background: rgb(241, 170, 245);
+   color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #eee0f4;
+}
+
+header{
+    background-color: #191819;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header .logo img{
+    height: 120px;
+    width: auto;
+    transition: 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header nav{
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+header nav li:hover {
+    transform: scale(1.1);
+}
+
+header nav a {
+    font-size: 700;
+    color: rgb(235, 234, 234);
+    text-decoration: none;
+}
+
+header nav li a:hover{
+    color: rgb(241, 170, 245);
+}
+
+header .boton button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: rgb(244, 244, 244);
+    padding: 9px 25px;
+    background-color: rgb(236, 103, 225);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .boton button:hover{
+    background-color: rgb(253, 243, 254);
+    color: rgb(2, 1, 1);
+    transform: scale(1.2);
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgb(2, 1, 1,70%);
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 50s infinite alternate ease-in-out;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    15%{margin-left: -50%;}
+    25%{margin-left: -50%;}
+
+    30%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    45%{margin-left: -150%;}
+    55%{margin-left: -150%;}
+
+    60%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+
+    80%{margin-left: -250%;}
+    95%{margin-left: -250%;}
+
+    95%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+.presentacion{
+    width: 100%;
+    color: white;
+    padding: 90px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow: hidden;
+    background-image: url(imagenes/ImagenPresentacion.jpg);
+    background-size: cover;
+}
+
+.presentacion a{
+    text-decoration: none;
+}
+
+.presentacion .boton-presentacion{
+    display: block;
+    margin: 90px auto;
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(244, 244, 244);
+    padding: 9px 25px;
+    background-color: rgb(236, 103, 225);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.presentacion .boton-presentacion:hover{
+    background-color: rgb(253, 243, 254);
+    color: rgb(2, 1, 1);
+    transform: scale(1.2);
+}
+
+#resaltado{
+    font-size: 30px;
+    color: rgb(241, 170, 245);
+    transition: 0.3s ease;
+}
+
+#resaltado:hover{
+    color: aliceblue;
+}
+
+footer{
+    width: 100%;
+    background-color: #191819;
+}
+
+.footer-completo{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.caja-footer{
+    display: flex;
+    color: rgb(235, 234, 234);
+    margin-right:70px;
+    justify-content: space-between;
+}
+.caja-footer h1{
+    font-size: 25px;
+    margin: 10px 30px;
+}
+.columna1,.columna2,.columna3{
+    margin-left: 0px;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+.columna1{
+    max-width: 400px;
+}
+.columna1 iframe{
+    margin-top: 10px;
+    outline: 2px solid rgb(236, 103, 225);
+    border-radius: 10px;
+}
+
+.columna1 h1{
+    margin-left: 60px;
+}
+
+.columna2{
+    max-width: 400px;
+}
+.columna2 ul{
+    list-style: none;
+}
+
+.columna2 li {
+    display: inline-block;
+    margin: 20px 35px;
+}
+
+.columna2 li img{
+    width: 50px;
+    transition: 0.3s;
+}
+.columna2 li img:hover{
+    transform: scale(1.2);
+}
+
+.columna3{
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.columna3 h1{
+    margin-left: 0;
+}
+
+.columna3 ul{
+    list-style: none;
+}
+
+.columna3 li{
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.columna3 li:hover{
+    transform: scale(1.1);
+}
+
+.columna3 li a:hover{
+        color: rgb(241, 170, 245);
+}
+
+.columna3 li a{
+    font-size: 700;
+    color: rgb(235, 234, 234);
+    text-decoration: none;
+}
+
+.footer-final{
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #2B282C;
+    padding: 5px;
+}
+
+.autor a{
+    text-decoration: none;
+    color: white;
+}
+
+.informacion,.autor{
+    margin: 0 auto;
+}
+
+.informacion a{
+    text-decoration: none;
+    font-size: 9px;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+}

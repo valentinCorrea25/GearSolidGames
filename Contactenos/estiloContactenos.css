@@ -1,0 +1,133 @@
+.contenedorContactenos{
+    padding: 30px;
+    color: aliceblue;
+    background-color: rgb(25, 24, 25, 85%);
+}
+
+.contenedorContactenos h1{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+}
+
+#tirarHumo{
+    font-size: 50px;
+    color: rgb(241, 170, 245);
+    transition: 0.3s ease;
+}
+
+#tirarHumo:hover{
+    color: #f0f8ff;
+}
+
+.contenedorInformacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactenosRedesSociales{
+    margin: 10px 40px;
+    width: 50%;
+}
+.contactenosRedesSociales h1{
+    text-align: left;
+    font-size: 25px;
+}
+.contactenosRedesSociales ul{
+    background: rgba(9, 9, 9, 10%);
+    border-radius: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactenosRedesSociales li{
+    position: relative;
+    margin: 60px 40px;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.contactenosRedesSociales li img{
+    width: 100px;
+    float: top;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.contactenosRedesSociales a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#mail:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/MailBlanco.png);
+}
+
+#telefono:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/WhatsappBlanco.png);
+}
+#facebook:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/FacebookBlanco.png);
+}
+#instagram:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/InstagramBlanco.png);
+}
+#twitter:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/TwitterBlanco.png);
+}
+#youtube:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/YoutubeBlanco.png);
+}
+
+
+.mapa{
+    background-color: rgba(9, 9, 9, 10%);
+    padding: 30px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.mapa img{
+    width:70px;
+}
+
+.mapa iframe{
+    width: 100%;
+}
+
+.direccion{
+    display: flex;
+    justify-content: center;
+}
+
+.direccion img{
+    margin-top: 50%;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.direccion img:hover{
+    transform: scale(1.05);
+    content: url(../imagenes/footer/SucursalBlanco.png);
+}
+
+.textoDireccion{
+    margin-top: 14%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+

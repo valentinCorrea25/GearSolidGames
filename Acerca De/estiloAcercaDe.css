@@ -1,0 +1,74 @@
+.contenedorTexto{
+    padding: 30px;
+    background-color: rgb(25, 24, 25, 85%);
+}
+
+.contenedorTexto h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 120px;
+    margin: 50px 30px;
+    transition:0.5s ease;
+    position: relative;
+}
+
+.contenedorTexto h1:hover{
+    outline: 10px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: -20px 18px 267px 54px rgba(241,170,245,0.78);
+    -webkit-box-shadow: -20px 18px 267px 54px rgba(241,170,245,0.78); /* https://cssgenerator.org/text-shadow-css-generator.html */
+    -moz-box-shadow: -20px 18px 267px 54px rgba(241,170,245,0.78);
+    padding: 10px 0 10px 0;
+}
+
+#modificado{
+    transition:0.5s ease;
+    opacity: 0;
+    left: 50px;
+    z-index: 50;
+    position: absolute;
+}
+
+#modificado:hover{
+    opacity: 1;
+    color: rgb(241, 170, 245);
+}
+
+#modificado:hover + h1{
+    color: rgb(0, 0, 0);
+}
+
+
+.texto{
+    border-radius: 20px;
+    font-size: 25px;
+    color: aliceblue;
+    width: 90%;
+    margin: auto;
+    background-color: #2B282C;
+}
+
+.texto img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 30px;
+    float: left;
+    transition: 0.3s ease ;
+}
+
+.texto img:hover{
+    transform: scale(1.1);
+}
+
+.texto p{
+    margin: 10px;
+    padding: 10px;
+}
+
+#imagen2{
+    float: right;
+}
+
+#final{
+    font-size: 35px;
+}

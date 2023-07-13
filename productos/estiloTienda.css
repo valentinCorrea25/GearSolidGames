@@ -1,0 +1,203 @@
+.contenedorBarraDeBusqueda{
+    background: rgb(25, 24, 25, 85%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+.contenedorBarraDeBusqueda input{
+    width: 700px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgba(9, 9, 9, 10%);
+    border: 1px solid rgba(9, 9, 9, 50%);
+}
+
+.contenedorBotonBusqueda{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.contenedorBotonBusqueda button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgb(236, 103, 225);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    padding-top: 5px;
+}
+
+.contenedorBotonBusqueda span{
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    transition: 0.3s;
+}
+
+.contenedorBotonBusqueda button:hover span{
+    left: 20%;
+}
+
+.contenedorBotonBusqueda button:hover .imagen img{
+    opacity: 0.6;
+}
+
+.contenedorBarraDeBusqueda button:hover{
+    padding-left: 10px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.imagen{
+    position: absolute;
+    width: 18px;
+    top: 28%;
+    right: 10%;
+}
+.imagen img{
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.contenedorTodo{
+    background-color: rgb(25, 24, 25, 85%);
+    padding: 20px;
+}
+
+.contenedorApartado1{
+    background-color: rgba(9, 9, 9, 10%);
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    color: aliceblue;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.contenedorApartado1 h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+}
+
+.contenedorApartado1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedorApartado1 li{
+    padding: 10px;
+    margin: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 300px;
+    max-height: 305px;
+    background-color: rgba(9, 9, 9, 10%);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contenedorApartado1 li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contenedorApartado1 li:hover{
+    transform: scale(1.1);
+}
+
+.contenedorApartado1 li:hover .imagenPlataforma{
+    left: 5%;
+    bottom: 5px;
+}
+
+.contenedorApartado1 li:hover .plataformaContenedor span{
+    opacity: 1;
+}
+
+.plataformaContenedor{
+    position: relative;
+    height: 20px;
+    margin: 5px 0;
+}
+
+.imagenPlataforma{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 42%;
+    bottom: 5px;
+    transition: 0.3s;
+}
+
+.imagenPlataforma img{
+    width: 100%;
+}
+
+.plataformaContenedor{
+    font-size: 12px;
+    display: block;
+    position: relative;
+}
+
+.plataformaContenedor span{
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    color: rgb(241, 170, 245);
+}
+
+.contenedorApartado1 li img{
+    width: 90%;
+    float: top;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.precio{
+    margin: 10px;
+    font-size: 25px;
+    padding: 5px;
+    color:rgb(236, 103, 225);
+    display: block;
+    border-radius: 20px;
+    background: rgba(9, 9, 9, 10%);
+}
+
+.botonVerMas{
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(244, 244, 244);
+    padding: 9px 25px;
+    background-color: rgb(236, 103, 225);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 40px auto;
+    width: 240px;
+    height: 50px;
+}
+
+.botonVerMas:hover{
+    background-color: rgb(253, 243, 254);
+    color: rgb(2, 1, 1);
+    transform: scale(1.2);
+}

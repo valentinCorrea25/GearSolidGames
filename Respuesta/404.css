@@ -1,0 +1,38 @@
+.contenedorError{
+    background-color: rgba(25, 24, 25, 85%);
+    color: aliceblue;
+    padding: 30px;
+    position: relative;
+}
+
+.texto{
+    background: rgba(9, 9, 9, 10%);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.texto h1{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+.imagen404 img{
+    display: flex;
+    width: 200px;
+    margin: 40px auto;
+}
+.imagen404{
+    right: 12%;
+    top: 5%;
+}
+
+#esp{
+    font-size: 90px;
+    color: #f1aaf5;
+    transition: 0.3s;
+}
+
+#esp:hover{
+    font-size: 100px;
+    color: aliceblue;
+}
